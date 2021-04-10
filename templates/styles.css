@@ -1,0 +1,23 @@
+#about
+{
+    padding-top: 40px;
+    background: blue
+}
+.profile-picture
+{
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    size: 15px;
+}
+#values
+{
+    background: blue;
+    color:#d82c2c;
+    text-decoration: none;
+}
+.profile-picture
+{
+    width: 80px;
+    height: 1px
+}

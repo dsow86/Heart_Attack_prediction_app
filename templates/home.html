@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Heart attack prediction with flask</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section id="about" class="container-fluid">
+            <h1> 
+                <font color='red'>
+                    <div style="text-align:center"> Heart Attack Analysis & Prediction Dataset</div>
+                </font>
+            </h1>
+            <hr>
+            <br>
+            <div class="col-xs-8 col-xl-8 col-md-4 profile-picture">
+                <img src="images/heart.jpg" alt="Sow" class="img-circle">
+            </div>
+        </section>    
+        <section id="values" class="container-fluid">
+            <h2> <div style="text-align: center;"> Enter The values </div> </h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <form method="POST" action="/predict">
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="age">
+                                    <p class="font-weight-bold"> age</p>
+                                    <input type="text" name="age">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="sex">
+                                    <p class="font-weight-bold"> sex</p>
+                                    <input type="text" name="sex">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="trtbps">
+                                    <p class="font-weight-bold"> trtbps</p>
+                                    <input type="text" name="trtbps">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="thalachh">
+                                    <p class="font-weight-bold"> thalachh</p>
+                                    <input type="text" name="thalachh">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="exng">
+                                    <p class="font-weight-bold"> exng</p>
+                                    <input type="text" name="exng">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="oldpeak">
+                                    <p class="font-weight-bold"> oldpeak</p>
+                                    <input type="text" name="oldpeak">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="slp">
+                                    <p class="font-weight-bold"> slp</p>
+                                    <input type="text" name="slp">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="caa">
+                                    <p class="font-weight-bold"> caa</p>
+                                    <input type="text" name="caa">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="thall">
+                                    <p class="font-weight-bold"> thall</p>
+                                    <input type="text" name="thall">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="typical_angina">
+                                    <p class="font-weight-bold"> typical_angina</p>
+                                    <input type="text" name="typical_angina">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="atypical_angina">
+                                    <p class="font-weight-bold"> atypical_angina</p>
+                                    <input type="text" name="atypical_angina">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="non_anginal_pain">
+                                    <p class="font-weight-bold"> non_anginal_pain</p>
+                                    <input type="text" name="non_anginal_pain">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="asymptomatic">
+                                    <p class="font-weight-bold"> asymptomatic</p>
+                                    <input type="text" name="asymptomatic">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="normal">
+                                    <p class="font-weight-bold"> normal</p>
+                                    <input type="text" name="normal">
+                                </label>
+                            </div>
+                            <div class="col-xs-3 col-xl-3 col-sm-4 col-md-4">
+                                <label for="having_abnormality">
+                                    <p class="font-weight-bold"> having_abnormality</p>
+                                    <input type="text" name="having_abnormality">
+                                </label>
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>   
+</html>   
