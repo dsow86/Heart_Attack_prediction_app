@@ -1,1 +1,4 @@
 # Heart_Attack_prediction_app
+The dataset for heart attack classification is available on: https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset. 
+Here we build a classification model using a deep neural network on keras. We are facing a binary classification and aim to predict wheiter or the patient is likely to have heart attack or not. The model has a accuracy of 86.95% on the test set. Here we do not really aim to focus on the model's performance, so we built a simple model and we do not focus neither on regularization nor on precision, recall, F1 score and other important metrics.
+We however focused on how to deploy this model on an application using flask, html, css and boostrap to deploy it in web server locally, and then after containerized using docker. Later we will push it in amazon ecs for an online application.
